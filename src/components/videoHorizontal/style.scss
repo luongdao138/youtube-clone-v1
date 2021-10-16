@@ -1,0 +1,81 @@
+@import '../../base.scss';
+
+.videoHorizontal {
+  margin-bottom: 10px;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    transform: translateY(-5px);
+    &__title {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      letter-spacing: 0;
+      font-size: 14px;
+      font-weight: 500;
+      @include line-clamp(2);
+    }
+  }
+
+  &__channel,
+  &__time {
+    font-size: 12px;
+    display: block;
+    font-weight: 500;
+  }
+
+  &__channel {
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 0.5rem;
+      margin-left: 0;
+      cursor: pointer;
+    }
+  }
+  &__duration {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1.25rem;
+    padding: 0.2rem;
+    background: #080808ec;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  &__time {
+    span {
+      margin-left: 4px;
+    }
+  }
+
+  &__desc {
+    font-weight: 12px;
+    @include line-clamp(2);
+  }
+  &__thumbnail__wrapper {
+    height: 100%;
+    img {
+      object-fit: contain;
+    }
+    .videoHorizontal__thumbnail-channel {
+      border-radius: 50%;
+      width: 50%;
+      display: block;
+      margin: auto;
+      object-fit: contain;
+    }
+  }
+}

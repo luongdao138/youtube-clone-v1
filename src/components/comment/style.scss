@@ -1,0 +1,22 @@
+@import '../../base.scss';
+
+.comment {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+  border-bottom: 2px solid #353946;
+
+  &__header {
+    span {
+      color: $text-color;
+      font-size: 0.8rem;
+      margin-left: 2px;
+    }
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+}

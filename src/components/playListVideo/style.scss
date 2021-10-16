@@ -1,0 +1,66 @@
+@import '../../base.scss';
+
+.playListVideo {
+  padding: 1.25rem 0.5rem;
+  border-bottom: 1px solid $border-color;
+  background-color: #0f0f0f;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #202020;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__duration {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 25px;
+    background: #0f0f0f;
+    padding: 0.2rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0.2rem;
+    @include line-clamp(2);
+  }
+
+  &__channelTitle {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .playListVideo {
+    padding: 1.25rem 0.5rem;
+
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 0.2rem;
+      @include line-clamp(2);
+    }
+
+    &__channelTitle {
+      font-size: 10px;
+      letter-spacing: 0.4px;
+      @include line-clamp(1);
+    }
+  }
+}

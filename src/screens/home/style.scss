@@ -1,0 +1,7 @@
+@import '../../base.scss';
+
+@media (min-width: $breakpoint-small) {
+  .homescreen {
+    max-width: calc(100vw - 250px);
+  }
+}

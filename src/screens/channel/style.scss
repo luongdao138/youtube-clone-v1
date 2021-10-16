@@ -1,0 +1,54 @@
+@import '../../base.scss';
+
+.channel-header {
+  border-bottom: 1px solid $border-color;
+  &__left {
+    h4 {
+      color: #fff;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  button {
+    text-transform: uppercase;
+    background-color: #cc0000;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border: none;
+    &.grey {
+      background-color: grey;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .channel-header {
+    padding: 1rem 0;
+    &__left {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        margin: 0;
+      }
+      span {
+        font-size: 0.7rem;
+      }
+    }
+
+    button {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+  }
+}
